@@ -9,6 +9,9 @@ script: ./grailsw refresh-dependencies --non-interactive
      && cd test/projects/default22
      && ./grailsw refresh-dependencies --non-interactive
      && ./grailsw "test-app functional:" --non-interactive
+     && cd ../mongo22
+     && ./grailsw refresh-dependencies --non-interactive
+     && ./grailsw "test-app functional:" --non-interactive
      && cd ../../..
      && ./grailsw package-plugin --non-interactive
      && ./grailsw publish-plugin --no-scm --allow-overwrite --non-interactive

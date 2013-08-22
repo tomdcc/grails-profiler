@@ -14,7 +14,7 @@ import org.springframework.transaction.interceptor.TransactionProxyFactoryBean
 class ProfilerGrailsPlugin {
 	def version = "0.6-SNAPSHOT"
 	def grailsVersion = "1.3.3 > *"
-	def loadAfter = ["services", "controllers"]
+	def loadAfter = ["services", "controllers", "mongodb"]
 	def title = "Profile Plugin"
 	def author = "Peter Ledbrook"
 	def authorEmail = "p.ledbrook@cacoethes.co.uk"
